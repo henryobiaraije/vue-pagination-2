@@ -137,3 +137,21 @@ import MyPagination from './MyPagination'
     }   
 }
 ```
+
+### Style with CSS
+```
+:root {
+  --default-color: #ff9900; /* Define your custom variable here with its value */
+}
+
+.card-pagination li button:not(.active) {
+  color: var(--default-color) !important;
+}
+
+.card-pagination li button.active {
+  background: var(--default-color) !important;
+  border-color: var(--default-color) !important;
+}
+
+```
+
